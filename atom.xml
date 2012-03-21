@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Jinpu's blog]]></title>
+  <link href="http://hujinpu.com/atom.xml" rel="self"/>
+  <link href="http://hujinpu.com/"/>
+  <updated>2012-03-21T21:19:38+08:00</updated>
+  <id>http://hujinpu.com/</id>
+  <author>
+    <name><![CDATA[Jinpu Hu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[重新开博]]></title>
+    <link href="http://hujinpu.com/news/reblog/"/>
+    <updated>2012-02-25T20:00:00+08:00</updated>
+    <id>http://hujinpu.com/news/reblog</id>
+    <content type="html"><![CDATA[<p>已经很久没有正经写博客，最近多是在<a href="http://weibo.com/hujinpu">微博</a>上文艺文艺。</p>
+
+<p>曾经的博客有好多个地方，内容也五花八门，多以分享技术心得为主。至于怎么就没能坚持下去，具体原因不详。</p>
+
+<!-- more -->
+
+
+<p>也许工作太忙，也许心态比较浮躁，也许，总结找个理由太容易了。</p>
+
+<p>在我印象中，沉下心来写博客，对每篇文章反复推敲，那应该属07年的事情了，特别是真经系列了，当时一心就是要出绝世之作，当然，绝世经典谈不上，但在那个年代，还是给一些想进阶的前端工程师不少养分。当时很多网页看了我的文章侯，给我发邮件，问问题。有时因为要避免让后来人再问问题，熬夜修改原文，进一步使其深入浅出。</p>
+
+<p>在国内，技术写作这块，<a href="http://blog.sina.com.cn/aimingoo">爱民</a>一直做得不错，是值得学习的榜样，我想和他<a href="http://blog.sina.com.cn/s/blog_6ecdf13001012osp.html">没有信仰有关</a>。</p>
+
+<p>虽然还是可以有各种理由不写博客，但长此以往，文将不文，遂，提笔，成文。</p>
+]]></content>
+  </entry>
+  
+</feed>
