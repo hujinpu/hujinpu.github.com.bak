@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="blog-index">
+
+    <article>
+        <p>Looks like the page you&#8217;re after doesn&#8217;t exist.  Guess you&#8217;re going to have to go <a href="/">home</a> and try again!</p>
+        <p>You will be redirected momentarily...</p>
+
+        <script type="text/javascript">setTimeout(function(){window.location.href="http://hujinpu.com/";}, 5000);</script>
+    </article>
+
+</div>
+<aside class="sidebar">
+  {% if site.blog_index_asides.size %}
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>
