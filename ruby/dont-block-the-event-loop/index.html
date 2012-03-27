@@ -5,11 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>重新开博 - Jinpu's blog</title>
+  <title>Don't block the event loop! - Jinpu's blog</title>
   <meta name="author" content="Jinpu Hu">
 
   
-  <meta name="description" content="已经很久没有正经写博客，最近多是在微博上文艺文艺。 曾经的博客有好多个地方，内容也五花八门，多以分享技术心得为主。至于怎么就没能坚持下去，具体原因不详。 也许工作太忙，也许心态比较浮躁，也许，总结找个理由太容易了。 在我印象中，沉下心来写博客，对每篇文章反复推敲，那应该属07年的事情了， &hellip;">
+  <meta name="description" content="为下次ruby tuesday准备的ppt。 重点如下： 怎么理解并发突破了xxx (CXXXK problem)
+non-blocking i/o 与 asynchronous 的区别
+reactor pattern
+TCP is a stream
+read eventmachine &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://hujinpu.com/news/reblog">
+  <link rel="canonical" href="http://hujinpu.com/ruby/dont-block-the-event-loop">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">重新开博</h1>
+      <h1 class="entry-title">Don't Block the Event Loop!</h1>
     
     
       <p class="meta">
@@ -83,7 +87,7 @@
   
 
 
-<time datetime="2012-02-25T20:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2012</time>
+<time datetime="2012-03-27T22:52:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -92,20 +96,26 @@
   </header>
 
 
-<div class="entry-content"><p>已经很久没有正经写博客，最近多是在<a href="http://weibo.com/hujinpu">微博</a>上文艺文艺。</p>
+<div class="entry-content"><p>为下次ruby tuesday准备的ppt。</p>
 
-<p>曾经的博客有好多个地方，内容也五花八门，多以分享技术心得为主。至于怎么就没能坚持下去，具体原因不详。</p>
+<p>重点如下：</p>
 
-<!-- more -->
+<ul>
+<li>怎么理解并发突破了xxx (CXXXK problem)</li>
+<li>non-blocking i/o 与 asynchronous 的区别</li>
+<li>reactor pattern</li>
+<li>TCP is a stream</li>
+<li>read eventmachine source code</li>
+<li>fiber</li>
+</ul>
 
 
-<p>也许工作太忙，也许心态比较浮躁，也许，总结找个理由太容易了。</p>
+<p>如果你想你的程序方便扩展并且non-blocking i/o，请绝不要堵塞你的event loop。</p>
 
-<p>在我印象中，沉下心来写博客，对每篇文章反复推敲，那应该属07年的事情了，特别是真经系列了，当时一心就是要出绝世之作，当然，绝世经典谈不上，但在那个年代，还是给一些想进阶的前端工程师不少养分。当时很多网页看了我的文章侯，给我发邮件，问问题。有时因为要避免让后来人再问问题，熬夜修改原文，进一步使其深入浅出。</p>
+<div style="width:595px" id="__ss_12172128"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/hujinpu/dont-block-the-event-loop" title="Don’t block the event loop!" target="_blank">Don’t block the event loop!</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/12172128" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/hujinpu" target="_blank">hujinpu</a> </div> </div>
 
-<p>在国内，技术写作这块，<a href="http://blog.sina.com.cn/aimingoo">爱民</a>一直做得不错，是值得学习的榜样，我想和他<a href="http://blog.sina.com.cn/s/blog_6ecdf13001012osp.html">没有信仰有关</a>。</p>
 
-<p>虽然还是可以有各种理由不写博客，但长此以往，文将不文，遂，提笔，成文。</p>
+
 </div>
 
 
@@ -128,12 +138,12 @@
   
 
 
-<time datetime="2012-02-25T20:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2012</time>
+<time datetime="2012-03-27T22:52:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/news/'>news</a>
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -142,7 +152,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://hujinpu.com/news/reblog/" data-via="" data-counturl="http://hujinpu.com/news/reblog/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://hujinpu.com/ruby/dont-block-the-event-loop/" data-via="" data-counturl="http://hujinpu.com/ruby/dont-block-the-event-loop/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -155,8 +165,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/news/reblog/" title="Previous Post: 重新开博">&laquo; 重新开博</a>
       
-        <a class="basic-alignment right" href="/ruby/dont-block-the-event-loop/" title="Next Post: Don't block the event loop!">Don't block the event loop! &raquo;</a>
       
     </p>
   </footer>
@@ -211,8 +221,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://hujinpu.com/news/reblog/';
-        var disqus_url = 'http://hujinpu.com/news/reblog/';
+        var disqus_identifier = 'http://hujinpu.com/ruby/dont-block-the-event-loop/';
+        var disqus_url = 'http://hujinpu.com/ruby/dont-block-the-event-loop/';
         var disqus_script = 'embed.js';
       
     (function () {

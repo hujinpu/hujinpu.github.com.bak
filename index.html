@@ -9,7 +9,11 @@
   <meta name="author" content="Jinpu Hu">
 
   
-  <meta name="description" content="已经很久没有正经写博客，最近多是在微博上文艺文艺。 曾经的博客有好多个地方，内容也五花八门，多以分享技术心得为主。至于怎么就没能坚持下去，具体原因不详。 ">
+  <meta name="description" content="为下次ruby tuesday准备的ppt。 重点如下： 怎么理解并发突破了xxx (CXXXK problem)
+non-blocking i/o 与 asynchronous 的区别
+reactor pattern
+TCP is a stream
+read eventmachine &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +74,63 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/ruby/dont-block-the-event-loop/">Don&#8217;t Block the Event Loop!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-27T22:52:00+08:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
+        
+         | <a href="/ruby/dont-block-the-event-loop/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>为下次ruby tuesday准备的ppt。</p>
+
+<p>重点如下：</p>
+
+<ul>
+<li>怎么理解并发突破了xxx (CXXXK problem)</li>
+<li>non-blocking i/o 与 asynchronous 的区别</li>
+<li>reactor pattern</li>
+<li>TCP is a stream</li>
+<li>read eventmachine source code</li>
+<li>fiber</li>
+</ul>
+
+
+<p>如果你想你的程序方便扩展并且non-blocking i/o，请绝不要堵塞你的event loop。</p>
+
+<div style="width:595px" id="__ss_12172128"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/hujinpu/dont-block-the-event-loop" title="Don’t block the event loop!" target="_blank">Don’t block the event loop!</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/12172128" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/hujinpu" target="_blank">hujinpu</a> </div> </div>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/news/reblog/">重新开博</a></h1>
     
     
@@ -121,6 +182,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/ruby/dont-block-the-event-loop/">Don&#8217;t block the event loop!</a>
+      </li>
     
       <li class="post">
         <a href="/news/reblog/">重新开博</a>
