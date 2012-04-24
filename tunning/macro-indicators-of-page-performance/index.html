@@ -5,14 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Jinpu's blog</title>
+  <title>页面性能中的几个宏观指标 - Jinpu's blog</title>
   <meta name="author" content="Jinpu Hu">
 
   
-  <meta name="description" content="Blog Archive 2012 页面性能中的几个宏观指标
-Apr 24 2012 posted in tunning Don&#8217;t block the event loop!
-Mar 27 2012 posted in ruby 重新开博
-Feb 25 2012 posted in &hellip;">
+  <meta name="description" content="最近在做提升淘宝页面性能相关的事情。从宏观层面，我比较关注的几个指标： 用户的动作效果（比如点击），超过0.1s，用户就觉得不流畅；
+出现loading的最佳时间为0.4s后，这会让用户忽略前面0.4s的等待；
+对于用户的输入，0.1s-1s用户感觉计算机在为他处理事情，是可以接受的等待， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +20,7 @@ Feb 25 2012 posted in &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://hujinpu.com/blog/archives">
+  <link rel="canonical" href="http://hujinpu.com/tunning/macro-indicators-of-page-performance">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -66,64 +65,107 @@ Feb 25 2012 posted in &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">页面性能中的几个宏观指标</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-24T12:34:00+08:00" pubdate data-updated="true">Apr 24<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>最近在做提升淘宝页面性能相关的事情。从宏观层面，我比较关注的几个指标：</p>
 
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/tunning/macro-indicators-of-page-performance/">页面性能中的几个宏观指标</a></h1>
-<time datetime="2012-04-24T12:34:00+08:00" pubdate><span class='month'>Apr</span> <span class='day'>24</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/tunning/'>tunning</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/ruby/dont-block-the-event-loop/">Don&#8217;t block the event loop!</a></h1>
-<time datetime="2012-03-27T22:52:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>27</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/news/reblog/">重新开博</a></h1>
-<time datetime="2012-02-25T20:00:00+08:00" pubdate><span class='month'>Feb</span> <span class='day'>25</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/news/'>news</a></span>
-</footer>
-
-
-</article>
+<ul>
+<li>用户的动作效果（比如点击），超过0.1s，用户就觉得不流畅；</li>
+<li>出现loading的最佳时间为0.4s后，这会让用户忽略前面0.4s的等待；</li>
+<li>对于用户的输入，0.1s-1s用户感觉计算机在为他处理事情，是可以接受的等待，必须在1s内给出对应输出，这也意味着网页的首屏显示时间最理想的为1s内；</li>
+<li>8s后页面无法打开，用户大部分选择离开，12s后，99%的选择关闭该网页；</li>
+<li>宽带用户更加没有耐心，愿意等待时间缩短到4-6s；</li>
+<li>首屏的最佳设计高度600px。</li>
+</ul>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Jinpu Hu</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-24T12:34:00+08:00" pubdate data-updated="true">Apr 24<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/tunning/'>tunning</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://hujinpu.com/tunning/macro-indicators-of-page-performance/" data-via="" data-counturl="http://hujinpu.com/tunning/macro-indicators-of-page-performance/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/ruby/dont-block-the-event-loop/" title="Previous Post: Don't block the event loop!">&laquo; Don't block the event loop!</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -171,7 +213,10 @@ Feb 25 2012 posted in &hellip;">
       var disqus_shortname = 'hujinpu';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://hujinpu.com/tunning/macro-indicators-of-page-performance/';
+        var disqus_url = 'http://hujinpu.com/tunning/macro-indicators-of-page-performance/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
