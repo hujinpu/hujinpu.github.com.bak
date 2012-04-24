@@ -4,7 +4,7 @@
   <title><![CDATA[Jinpu's blog]]></title>
   <link href="http://hujinpu.com/atom.xml" rel="self"/>
   <link href="http://hujinpu.com/"/>
-  <updated>2012-04-24T12:42:07+08:00</updated>
+  <updated>2012-04-24T12:52:48+08:00</updated>
   <id>http://hujinpu.com/</id>
   <author>
     <name><![CDATA[Jinpu Hu]]></name>
@@ -18,7 +18,7 @@
     <link href="http://hujinpu.com/tunning/macro-indicators-of-page-performance/"/>
     <updated>2012-04-24T12:34:00+08:00</updated>
     <id>http://hujinpu.com/tunning/macro-indicators-of-page-performance</id>
-    <content type="html"><![CDATA[<p>最近在做提升淘宝页面性能相关的事情。从宏观层面，我比较关注的几个指标：</p>
+    <content type="html"><![CDATA[<p>最近在做提升淘宝页面性能相关的事情。从宏观层面，传统web页面，我比较关注的几个指标：</p>
 
 <ul>
 <li>用户的动作效果（比如点击），超过0.1s，用户就觉得不流畅；</li>
